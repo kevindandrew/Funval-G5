@@ -1,0 +1,20 @@
+.parrafos {
+  color: rgb(255, 0, 0);
+  background: linear-gradient(135deg, #000000, #7a7a7a, #d7d5d5);
+  font-size: 30px;
+}
+
+.imagen1 {
+  height: 500px;
+}
+.imagen2 {
+  height: 100px;
+}
+/* añadir estilos a su pagina web deberan usar 
+color
+background
+font-size
+height
+width
+y cualquier estilo q utedes hayan investigado
+*/
