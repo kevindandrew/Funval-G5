@@ -1,0 +1,78 @@
+/* .caja {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  color: white;
+  border: rgb(255, 1, 1) 1px solid;
+  padding: auto;
+  margin: 50px 40px 30px 20px;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.contenedor-cajas {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 30px 10px;
+  gap: 16px;
+}
+.caja {
+  height: 200px;
+  width: 200px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.caja1 {
+  background-color: red;
+  margin-left: 10px;
+}
+.caja2 {
+  background-color: darkgreen;
+  margin-right: 20px;
+}
+ */
+
+/* table {
+  background-color: rgb(215, 212, 212);
+  border: black 1px solid;
+  border-collapse: collapse;
+  text-align: center;
+}
+td,
+th {
+  border: black 1px solid;
+  padding: 8px;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(213, 211, 211);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(8, 53, 160);
+  padding: 16px;
+  border-radius: 8px;
+  gap: 8px;
+  color: white;
+}
+button {
+  background-color: rgb(5, 155, 5);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: 0;
+}
