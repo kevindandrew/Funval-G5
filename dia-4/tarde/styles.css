@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  background-color: brown;
+  height: 15%;
+  padding: 20px;
+}
+nav {
+  height: 100%;
+  color: white;
+}
+ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+  list-style-type: none;
+}
+main {
+  background-color: darkslateblue;
+  height: 75%;
+  display: flex;
+  color: white;
+}
+aside {
+  background-color: rgb(15, 89, 2);
+  width: 40%;
+}
+.navegacion {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+section {
+  background-color: rgb(10, 19, 117);
+  width: 60%;
+  position: relative;
+}
+article {
+  height: 70px;
+  width: 70px;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.art1 {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+}
+.art2 {
+  position: absolute;
+  left: 40%;
+  top: 25%;
+}
+.art3 {
+  position: absolute;
+  left: 70%;
+  top: 25%;
+}
+.art4 {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+.art5 {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+.art6 {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+}
+footer {
+  background-color: dodgerblue;
+  height: 10%;
+}
