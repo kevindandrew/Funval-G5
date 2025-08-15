@@ -1,0 +1,39 @@
+/* 1. Caja Flexible: Crea un contenedor con 3 divs hijos (cajas) y usa Flexbox para alinearlos en una fila horizontal. */
+
+/* 2. Centrado Perfecto: Centra un único div (horizontal y verticalmente) dentro de un contenedor grande usando Flexbox. */
+
+/* 3. Dirección de Columna: Organiza 4 botones en una columna vertical en el centro de la página. */
+
+/* 4. Espacio entre elementos: Distribuye 5 elementos con espacio uniforme entre ellos (usa `justify-content: space-between`). */
+
+/* 5. Alinear al final: Alinea 3 elementos al final (parte inferior) de un contenedor alto. */
+
+/* 6. Navbar Simple: Crea un menú horizontal con 5 enlaces, donde el logo está a la izquierda y los enlaces a la derecha. */
+
+/* 7. Tarjetas Responsivas: Diseña 3 tarjetas (con imagen y texto) en una fila que se apilen en columna en móviles (usa `flex-direction: column` en media queries). */
+
+/* 8. Footer Flexible: Un footer con 3 secciones: derechos (izquierda), enlaces (centro), redes (derecha). */
+
+/* 9. Ordenar Elementos: Usa `order` para cambiar visualmente el orden de 3 divs (sin modificar el HTML). */
+
+/* 10. Alineación Mixta: Un contenedor con algunos elementos alineados al inicio y otros al final (usa `align-self`). */
+
+/* 11. Grid con Flexbox: Simula una cuadrícula de 2x2 usando Flexbox y `flex-wrap`. */
+
+/* 12. Formulario Flexible: Diseña un formulario con etiquetas a la izquierda y campos a la derecha, alineados correctamente. */
+
+/* 13. Galería de Imágenes: Crea una galería donde las imágenes se expandan para llenar el espacio disponible pero mantengan su relación de aspecto. */
+
+/* 14. Menú Acordeón: Usa Flexbox para un acordeón vertical donde los ítems se expanden al hacer clic. */
+
+/* 15. Barra de Progreso: Construye una barra de progreso con secciones flexibles que se llenan dinámicamente. */
+
+/* 16. Layout Holy Grail: Crea el clásico layout (header, footer, 3 columnas: nav, content, aside) usando solo Flexbox. */
+
+/* 17. Masonry Layout: Diseña un diseño tipo "masonry" (como Pinterest) con Flexbox y `flex-wrap`. */
+
+/* 18. Carrusel Flexible: Un carrusel horizontal donde los ítems se centren en pantalla (sin librerías externas). */
+
+/* 19. Chat Flexible: Una interfaz de chat donde los mensajes propios estén a la derecha y los ajenos a la izquierda. */
+
+/* 20. Dashboard Responsivo: Un panel con sidebar colapsable (usando `flex-basis` y transiciones). */
