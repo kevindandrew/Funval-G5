@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor {
+  display: flex;
+  border: red 2px solid;
+  gap: 8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.caja {
+  border: black 2px solid;
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+.caja1 {
+  background-color: blue;
+  order: 3;
+  flex-grow: 5;
+}
+.caja2 {
+  background-color: brown;
+  order: 1;
+  flex-grow: 2;
+}
+.caja3 {
+  background-color: darkgreen;
+  order: 2;
+  flex-grow: 3;
+}
