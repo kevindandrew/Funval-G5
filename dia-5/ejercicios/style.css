@@ -4,13 +4,13 @@
 
 /* 3. Dirección de Columna: Organiza 4 botones en una columna vertical en el centro de la página. */
 
-/* 4. Espacio entre elementos: Distribuye 5 elementos con espacio uniforme entre ellos (usa `justify-content: space-between`). */
+/* 4. Espacio entre elementos: Distribuye 5 elementos con espacio uniforme entre ellos (usa `justify-content: space-between`). prohibido usar gap 7-7*/
 
 /* 5. Alinear al final: Alinea 3 elementos al final (parte inferior) de un contenedor alto. */
 
 /* 6. Navbar Simple: Crea un menú horizontal con 5 enlaces, donde el logo está a la izquierda y los enlaces a la derecha. */
 
-/* 7. Tarjetas Responsivas: Diseña 3 tarjetas (con imagen y texto) en una fila que se apilen en columna en móviles (usa `flex-direction: column` en media queries). */
+/* 7. Tarjetas Responsivas: Diseña 3 tarjetas (con imagen y texto) en una fila que se apilen en columna en móviles  */
 
 /* 8. Footer Flexible: Un footer con 3 secciones: derechos (izquierda), enlaces (centro), redes (derecha). */
 
@@ -37,3 +37,100 @@
 /* 19. Chat Flexible: Una interfaz de chat donde los mensajes propios estén a la derecha y los ajenos a la izquierda. */
 
 /* 20. Dashboard Responsivo: Un panel con sidebar colapsable (usando `flex-basis` y transiciones). */
+
+/* ------------------------------------------------- */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .cont {
+  display: flex;
+  border: 2px red solid;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.card {
+  border: 2px solid black;
+  background-color: rgb(123, 4, 4);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 220px;
+  height: 220px;
+}
+
+.spiderman {
+  order: 3;
+}
+.superman {
+  order: 1;
+}
+.luffy {
+  order: 2;
+}
+.isagi {
+  order: 4;
+} */
+
+.container {
+  border: red 2px solid;
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+}
+.caja {
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+.caja1 {
+  background-color: blue;
+}
+.caja2 {
+  background-color: brown;
+}
+.caja3 {
+  background-color: blueviolet;
+}
+
+@media (min-width: 375px) {
+  /* todo lo q escribamos aqui dentro seran los estilos q se van a aplicar en
+  estas medias de pantalla */
+  .container {
+    flex-direction: row;
+  }
+}
+@media (min-width: 425px) {
+  .caja1 {
+    order: 3;
+  }
+  .caja2 {
+    order: 1;
+  }
+  .caja3 {
+    order: 2;
+  }
+}
+@media (min-width: 768px) {
+  .caja {
+    background-color: rgb(89, 2, 2);
+  }
+}
+@media (min-width: 1024px) {
+  .caja {
+    background-color: darkcyan;
+  }
+}
+@media (min-width: 1280px) {
+  .caja {
+    background-color: darkviolet;
+  }
+  .caja1 {
+    display: none;
+  }
+}
