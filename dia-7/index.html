@@ -6,16 +6,110 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body class="h-screen flex items-center justify-center">
-    <div class="relative size-56">
-      <!-- Imagen base -->
+  <body
+    class="h-screen flex items-center justify-center flex-col gap-4 bg-slate-900"
+  >
+    <!-- <div class="relative size-56">
       <div
         class="absolute inset-0 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7EMJ373EzcKql9xnuAmcXaH21NaoAj-4idA&s')] bg-center bg-cover transition-opacity duration-700"
       ></div>
-      <!-- Imagen hover (arriba, invisible al inicio) -->
       <div
         class="absolute inset-0 bg-[url('https://i.redd.it/a165wzt085zb1.jpg')] bg-center bg-cover opacity-0 hover:opacity-100 transition-opacity duration-900"
       ></div>
     </div>
+    <button
+      class="bg-blue-500 text-white py-2 px-3 rounded-2xl hover:bg-blue-900 focus:outline-4 focus:outline-blue-600 focus:outline-offset-1 active:bg-red-700"
+    >
+      enviar
+    </button> -->
+    <form
+      action=""
+      class="flex flex-col gap-4 bg-gray-600 text-white p-4 rounded-2xl"
+    >
+      <label for="">Nombre</label>
+      <input
+        type="text"
+        placeholder="Juan Perez"
+        class="px-1.5 outline-none ring-1 ring-gray-100 focus:ring-2 focus:ring-sky-500 rounded-sm focus:text-sky-500"
+      />
+      <label for="">Correo</label>
+      <input
+        type="email"
+        placeholder="juan@gmail.com"
+        class="px-1.5 rounded-sm outline-none ring-1 ring-gray-100 focus:ring-2 focus:ring-sky-500 focus:text-sky-500 invalid:focus:ring-pink-700 invalid:focus:text-pink-700"
+      />
+      <label for="">edad</label>
+      <input
+        type="text"
+        placeholder="0"
+        disabled
+        class="px-1.5 rounded-sm disabled:ring-1 disabled:ring-gray-500 disabled:bg-gray-700"
+      />
+      <div class="flex flex-col gap-3">
+        <label for="">estaca</label>
+        <select name="" id="">
+          opciones
+          <option value="" class="text-black">copacabana</option>
+          <option value="" class="text-black">miraflores</option>
+          <option value="" class="text-black hover:bg-red-800">
+            san antionio
+          </option>
+          <option value="" class="text-black">san pedro</option>
+        </select>
+        <!-- <div class="bg-gray-700 flex justify-between px-1.5 py-0.5 relative">
+          opciones..
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+          <div class="absolute bg-gray-700 p-2 top-[100%] hover:hidden">
+            <ul class="flex flex-col gap-2">
+              <li class="bg-red-800 flex gap-0.5 p-1">
+                copabana
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                  />
+                </svg>
+              </li>
+              <li>miraflores</li>
+              <li>san pedro</li>
+              <li>sonrisa</li>
+              <li>agua de la vida</li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </form>
+
+    <!-- el secretario de barrio necesita su ayuda nuevamente para poder agendar visitas
+     de los maestros ministrantes 
+     el formulario debera tener 
+        apellido de la familia
+        estaca a la q pertenece (almenos 5 opciones)
+        la cantida de integrantes de la familia
+        fecha y hora para recibirlos
+        y el correo de la familia verificar q el correo este valido
+        y un boton para enviar esa informacion  debera estar desabilitado
+     -->
   </body>
 </html>
