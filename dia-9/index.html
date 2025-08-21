@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" id="todo" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Document</title>
+  </head>
+  <body
+    class="dark:bg-slate-900 h-screen w-full flex items-center justify-center flex-col"
+  >
+    <button
+      class="bg-green-800 text-white p-4 rounded-2xl hover:bg-red-800 hover:dark:bg-pink-400"
+      id="btn"
+    >
+      cambiar
+    </button>
+    <form
+      action=""
+      class="flex flex-col gap-4 bg-gray-700 text-white dark:text-black dark:bg-white p-4 rounded-2xl"
+    >
+      <label for="">nombre</label>
+      <input
+        type="text"
+        placeholder="Juan"
+        class="bg-gray-400 dark:bg-slate-500"
+      />
+      <label for="">apellido</label>
+      <input
+        type="text"
+        placeholder="Perez"
+        class="bg-gray-400 dark:bg-slate-500"
+      />
+    </form>
+    <script>
+      let todo = document.querySelector("#todo");
+      let botoncito = document.querySelector("#btn");
+      botoncito.addEventListener("click", function () {
+        todo.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
