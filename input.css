@@ -1,3 +1,8 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 /* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+@import url("https://fonts.cdnfonts.com/s/92625/simpsonfont.woff");
+
+@theme {
+  --font-simpson: "Simpsonfont", sans-serif;
+}
