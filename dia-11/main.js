@@ -189,11 +189,14 @@ edadPersona >= 18
   : console.log("quien eres? ");
 
 /* ----------recabar informacion del usuario desde js----------- */
-let edadEstudiante = parseInt(prompt("por favor ingresa tu edad"));
+/* let edadEstudiante = parseInt(prompt("por favor ingresa tu edad"));
 let nombreEstudiante = prompt("por favor ingresa tu nombre");
 alert("hola " + nombreEstudiante);
 console.log(nombreEstudiante, edadEstudiante);
 console.log(typeof edadEstudiante);
+
+let estudianteFunval2 = "Luis Enrique";
+console.log(estudianteFunval2.length); */
 
 /* -----ejercicio operador ternario, prompt y alert----
 pedir a un usuario q ingrese
@@ -209,4 +212,75 @@ si es mayor de edad pero no pertenece a la estaca miraflores
 entonces mostrar "Hola nombre se encuentra en la estaca equivocada"
 
 si es menor de edad mostrar "hola nombre no tienes acceso"
+*/
+/* 
+
+// 1. MAYOR DE TRES NÚMEROS
+// Pide tres números al usuario y muestra cuál es el mayor usando comparaciones.
+// (Tip: puedes usar if...else o anidando ternarios)
+
+
+// 2. CONTRASEÑA SEGURA
+// Pide al usuario una contraseña.
+// Debe tener al menos 6 caracteres Y no ser "123456".
+// Si cumple muestra "Contraseña segura", sino "Contraseña débil".
+
+
+// 3. ACCESO AL CLUB
+// Pide la edad y si tiene membresía (si/no).
+// Puede entrar si es mayor de 21 O tiene membresía VIP.
+// Usa operadores lógicos y muestra con alert.
+
+
+// 4. JUEGO DE DADOS
+// Pide dos números (entre 1 y 6).
+// Si ambos son iguales → "Empate".
+// Si la suma es mayor o igual a 10 → "Ganaste".
+// Sino → "Perdiste".
+
+
+// 5. TIENDA DE DESCUENTO
+// Pide el monto de compra.
+// Si el monto es mayor o igual a 100 → 20% de descuento.
+// Si está entre 50 y 99 → 10% de descuento.
+// Si es menor de 50 → sin descuento.
+// Usa operador ternario anidado.
+
+
+// 6. VERIFICACIÓN DE EMAIL
+// Pide al usuario un texto (su email).
+// Si contiene el carácter "@" → válido, caso contrario inválido.
+// Usa comparación y un ternario.
+
+
+// 7. CLASIFICACIÓN DE NOTA
+// Pide la nota (0 a 100).
+// - 90 o más → "Excelente"
+// - 70 a 89 → "Bueno"
+// - 60 a 69 → "Regular"
+// - Menos de 60 → "Reprobado"
+// Usa if + operadores de comparación.
+
+
+// 8. PUEDES VIAJAR
+// Pide edad y si tiene pasaporte (si/no).
+// Puede viajar si es mayor de 18 Y tiene pasaporte.
+// Si no cumple, mostrar "No puedes viajar".
+// Resuélvelo con un ternario.
+
+
+// 9. NÚMERO DENTRO DE RANGO
+// Pide un número.
+// Si está entre 10 y 20 (incluidos) mostrar "Dentro del rango".
+// Si no, "Fuera del rango".
+// Usa comparación + &&
+
+
+// 10. JUEGO DE PIEDRA, PAPEL O TIJERA
+// Pide al jugador su opción (piedra/papel/tijera).
+// Genera una opción para la computadora (elige tú manualmente).
+// Usa comparaciones y lógicos para decidir quién gana.
+// Ej: piedra gana a tijera, tijera gana a papel, papel gana a piedra.
+
+
 */
