@@ -213,6 +213,18 @@ entonces mostrar "Hola nombre se encuentra en la estaca equivocada"
 
 si es menor de edad mostrar "hola nombre no tienes acceso"
 */
+let edadUsuario = parseInt(prompt("ingrese su edad"));
+let nombreUsuario = prompt("ingrese su nombre");
+let estkUsuario = prompt("ingrese la estaca a la q pertenece");
+
+edadUsuario >= 18
+  ? estkUsuario.toLowerCase() === "miraflores"
+    ? console.log("hola " + nombreUsuario + " sea Bienvenido al sistema")
+    : console.log(
+        "hola " + nombreUsuario + " se encuentra en la estaca equivocada"
+      )
+  : console.log("hola " + nombreUsuario + " no tienes acceso");
+
 /* 
 
 // 1. MAYOR DE TRES NÚMEROS
