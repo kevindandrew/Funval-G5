@@ -163,3 +163,50 @@ Si la edad está entre 13 y 17, muestra "Eres adolescente".
 Si es menor a 13, "Eres niño".
 
 Si es mayor o igual a 18, "Eres adulto". */
+
+/* ------TEMAS DE OPERADORES LOGICOS----- */
+
+let x1 = 20;
+let x2 = 12;
+let x3 = 5;
+let x4 = 8;
+respuesta = (x1 === "18" && x2 != x4) || x4 <= x3; //4f  0v
+
+/* ----------OPERADOR TERNARIO----------(if abreviado) */
+/* 
+    condicion
+        ?si la condicion es verdadera
+        :si la condicion es falsa
+*/
+
+let edadPersona = 15;
+let nombrePersona = "kevin";
+
+edadPersona >= 18
+  ? console.log("ERES ADULTO")
+  : nombrePersona == "kevin"
+  ? console.log("hola kevin")
+  : console.log("quien eres? ");
+
+/* ----------recabar informacion del usuario desde js----------- */
+let edadEstudiante = parseInt(prompt("por favor ingresa tu edad"));
+let nombreEstudiante = prompt("por favor ingresa tu nombre");
+alert("hola " + nombreEstudiante);
+console.log(nombreEstudiante, edadEstudiante);
+console.log(typeof edadEstudiante);
+
+/* -----ejercicio operador ternario, prompt y alert----
+pedir a un usuario q ingrese
+su edad
+su nombre
+y el nombre de la estaca a la q pertenece y evaluar
+
+si es mayor de edad
+y si pertenece a la estaca miraflores-MIRAFLORES-MIraFLOres
+entonces mostrar "hola nombre sea Bienvenido al sistema"
+
+si es mayor de edad pero no pertenece a la estaca miraflores
+entonces mostrar "Hola nombre se encuentra en la estaca equivocada"
+
+si es menor de edad mostrar "hola nombre no tienes acceso"
+*/
