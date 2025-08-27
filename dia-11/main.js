@@ -213,11 +213,11 @@ entonces mostrar "Hola nombre se encuentra en la estaca equivocada"
 
 si es menor de edad mostrar "hola nombre no tienes acceso"
 */
-let edadUsuario = parseInt(prompt("ingrese su edad"));
+
 let nombreUsuario = prompt("ingrese su nombre");
 let estkUsuario = prompt("ingrese la estaca a la q pertenece");
 
-edadUsuario >= 18
+parseInt(prompt("ingrese su edad")) >= 18
   ? estkUsuario.toLowerCase() === "miraflores"
     ? console.log("hola " + nombreUsuario + " sea Bienvenido al sistema")
     : console.log(
@@ -293,6 +293,5 @@ edadUsuario >= 18
 // Genera una opción para la computadora (elige tú manualmente).
 // Usa comparaciones y lógicos para decidir quién gana.
 // Ej: piedra gana a tijera, tijera gana a papel, papel gana a piedra.
-
 
 */
