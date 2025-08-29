@@ -210,7 +210,9 @@ let var3 = obj.c; */
 // Tienes un array de objetos con {nombre, edad}.
 // Crea una función que devuelva solo los nombres de los mayores de edad.
 
-let est = [
+/* let est = [
+
+
   {
     nombre: "Jesus",
     edad: 23,
@@ -248,3 +250,40 @@ function mayores(pepito) {
 }
 
 console.log(mayores(est));
+ */
+
+let listaEstudiantes = [
+  {
+    nombre: "Mario",
+    Pais: "Argentina",
+    notas: [20, 55, 78, 90, 12],
+  },
+  {
+    nombre: "Nefi",
+    Pais: "Mexico",
+    notas: [100, 90, 78, 90, 0],
+  },
+  {
+    nombre: "Santiago",
+    Pais: "Argentina",
+    notas: [70, 80, 77, 0, 11],
+  },
+  {
+    nombre: "Geraldine",
+    Pais: "Peru",
+    notas: [20, 10, 0, 0, 100],
+  },
+  {
+    nombre: "Jesus",
+    Pais: "Colombia",
+    notas: [70, 60, 80, 32, 22],
+  },
+];
+/* 
+quiero un programa q pueda mostrarme el nombre de los estudiantes aprobados cuando promedio
+es mayor a 75, mostrar a los estudiantes aprobados junto con su nota de aprobacion 
+
+-mostrar de q pais tenemos la mayor cantidad de estudiantes aprobados y la cantidad q tiene
+ejemplo ARGENTINA 12
+
+*/
