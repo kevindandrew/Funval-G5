@@ -56,3 +56,43 @@ if (!swchLuis) {
 */
 
 let notasEstudiante = [65, 44, 90, 10, 51, 0]; //METODO REDUCE
+
+function promedio(arrayNotas) {
+  let prom = 0;
+  for (let index = 0; index < arrayNotas.length; index++) {
+    prom = prom + arrayNotas[index];
+    console.log(arrayNotas[index]);
+  }
+  prom = prom / arrayNotas.length;
+  if (prom >= 51) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(promedio(notasEstudiante));
+
+/* ---------------------OBJETOS--------------------- */
+
+let estudiantes = {
+  nombre: "Kevin",
+  edad: 28,
+  pais: "Boliva",
+  SUD: true,
+};
+/* acceder a los valores atraves de sus llaves */
+console.log(estudiantes.pais);
+/* ------agregar pares llaves valor-------- */
+estudiantes.genero = "Masculino";
+/* ---------eliminar pares de llave valor */
+delete estudiantes.pais;
+console.log(estudiantes);
+
+/* 
+quiero q vean un objeto del mundo real
+y lo puedan codigicar en un objeto manipulable
+acceder a almenos 2 valores atraves de sus llaves
+agregar almenos 2 pares de llave valor y 
+eliminar 1 ya existente 
+*/
