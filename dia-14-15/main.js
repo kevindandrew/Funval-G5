@@ -27,5 +27,32 @@ let estudiantesFunval1 = [
   "Nefi",
   "Santiago",
   "Roberto",
+  "Luis",
   "Mario",
 ];
+let swchSantiago = false;
+let swchLuis = false;
+for (let index = 0; index < estudiantesFunval1.length; index++) {
+  if (estudiantesFunval1[index] === "Santiago") {
+    console.log(
+      "si santiago si se encuentra en la lista en la posicion" + index
+    );
+    swchSantiago = true;
+  }
+  if (estudiantesFunval1[index] === "Luis") {
+    console.log("si Luis si se encuentra en la lista en la posicion" + index);
+    swchLuis = true;
+  }
+}
+
+if (!swchSantiago) {
+  console.log("santiago no se encuentra en la lista");
+}
+if (!swchLuis) {
+  console.log("Luis no se encuentra en la lista");
+}
+/* se le dara un array de notas de un estudiante debera sacar el promedio de nuestro estudiante y verificar 
+    si esta aprobado o reprobado la nota minima de aprobacion es de 51
+*/
+
+let notasEstudiante = [65, 44, 90, 10, 51, 0]; //METODO REDUCE
