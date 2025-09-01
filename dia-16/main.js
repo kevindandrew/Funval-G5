@@ -34,3 +34,41 @@ contenedor.classList.add("text-2xl", "font-bold", "text-red-500");
         uno de esos hijos debera ser IMG
         y el otro sera un p
 */
+/* ------------------PODER AGREGAR O MODIFICAR ATRIBUTOS EN JAVASCRIPT---------------- */
+let fotito = document.querySelector("#foto");
+/* cambiar los atributos */
+fotito.setAttribute(
+  "src",
+  "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/11/blue-lock-isagi(1).jpg"
+);
+fotito.setAttribute("alt", "imagen del personaje principal de blue lock");
+/* leer los atributos q tiene el elemento */
+console.log(fotito.getAttribute("src"));
+console.log(fotito.getAttribute("alt"));
+/* quitar atributos */
+fotito.removeAttribute("src");
+/* -----CREAR Y ELIMINAR ELEMENTOS HTML ------------------ */
+let lista = document.querySelector("ul");
+//creacion de un elemento
+let nuevo = document.createElement("li");
+nuevo.textContent = "Kevin";
+console.log(nuevo);
+//agregarlo al final
+//lista.appendChild(nuevo);
+//agregar al principio
+//lista.prepend(nuevo);
+//insertarlos antes de un elemento X
+//lista.insertBefore(nuevo, lista.children[1]);
+//eliminar un elemento
+lista.removeChild(lista.children[2]);
+console.log(lista);
+
+/* 
+    crear en HTML 
+    un etiqeuta de tipo div con h2
+    con javascript deberan crear un h1 con el nombre de un producto
+    una eitiqueta img para la imagen del producto
+    y una etiqueta de tipo parrafo para la descripcion del producto
+    y un boton de comprar 
+    dberan eliminar el h2 nativo y colocar en orden las etiquetas queda prohibido utilizar INERHTML
+*/
