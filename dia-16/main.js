@@ -26,3 +26,11 @@ contenedor.classList.remove("pepito");
 contenedor.classList.toggle("juan");
 contenedor.classList.add("bg-blue-700");
 contenedor.classList.add("text-2xl", "font-bold", "text-red-500");
+/* 
+    crear una etiqueta h1 p y div en el html
+    selecionar la etiqueta h1 y cambiar el texto y el color de texto (pueden usar tailwind o css puro)
+    modificar el color de fond de la etiqueta p y el tamaño de texto 
+    y con el div agregarle por lo menos 2 hijos 
+        uno de esos hijos debera ser IMG
+        y el otro sera un p
+*/
