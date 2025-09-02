@@ -48,10 +48,20 @@ form.addEventListener("submit", function (e) {
   //console.log(e);
   let obj = {};
   let nombreInput = document.querySelector("#nombre").value;
-  let apellidosInput = document.querySelector("#Apellidos").value;
-  obj.nombres = nombreInput;
-  obj.apellidos = apellidosInput;
-  console.log(nombreInput, apellidosInput);
+  let edadInput = document.querySelector("#edad").value;
+
+  let miembroSeleccionado = document.querySelector(
+    `input[name="miembroSud"]:checked`
+  );
+  let esMiembroSud;
+
+  if (miembroSeleccionado) {
+    esMiembroSud = miembroSeleccionado.value === "si";
+  }
+
+  obj.nombre = nombreInput;
+  obj.edad = parseInt(edadInput);
+  obj.esMiembroSud = esMiembroSud;
   console.log(obj);
 });
 

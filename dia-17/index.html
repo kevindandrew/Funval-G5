@@ -31,8 +31,20 @@
     >
       <label for="">Nombre:</label>
       <input type="text" placeholder="Juan Carlos" id="nombre" />
-      <label for="">Apellidos:</label>
-      <input type="text" placeholder="Perez Mamani" id="Apellidos" />
+      <label for="">Edad:</label>
+      <input type="number" placeholder="100" id="edad" />
+      <label for="">Es miembro Sud</label>
+      <div class="flex items-center justify-center gap-8">
+        <div>
+          <p>Si</p>
+          <input type="radio" id="sip" name="miembroSud" value="si" />
+        </div>
+        <div>
+          <p>No</p>
+          <input type="radio" id="nop" name="miembroSud" value="no" />
+        </div>
+      </div>
+
       <button type="submit" class="bg-white text-black rounded-2xl">
         enviar
       </button>
