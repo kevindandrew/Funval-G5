@@ -72,3 +72,11 @@ console.log(lista);
     y un boton de comprar 
     dberan eliminar el h2 nativo y colocar en orden las etiquetas queda prohibido utilizar INERHTML
 */
+/* --------------NAVEGAR ENTRE LOS ELEMENTOS DEL DOM----------------- */
+let juancho = document.querySelector(".items-list");
+console.log(juancho.parentNode); // al padre del elemento
+console.log(juancho.children); //los hijos del elemento
+console.log(juancho.firstElementChild); //el primer hijo del elemento
+console.log(juancho.lastElementChild); //el ultimo hijo del elemento
+console.log(juancho.nextElementSibling); //al hermano siguiente
+console.log(juancho.previousElementSibling); //al hermano ANTERIOR
