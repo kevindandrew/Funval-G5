@@ -7,10 +7,35 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body class="h-screen flex items-center justify-center">
-    <button id="btn" class="bg-blue-800 text-white p-4 rounded-2xl">
+  <body id="cuerpo" class="h-screen flex flex-col items-center justify-center">
+    <!-- <button id="btn" class="bg-blue-800 text-white p-4 rounded-2xl">
       haz click
     </button>
-    <p id="parrafo">amigos de funval</p>
+    <p id="parrafo">amigos de funval</p> -->
+    <!-- <button id="boton" class="bg-white p-4 rounded-2xl">Dia</button>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/d/d0/Fiona_standing_human.png"
+      alt=""
+      id="princesa"
+    />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/b/b9/Princess_Fiona.png"
+      alt=""
+      class="hidden"
+      id="ogro"
+    /> -->
+    <form
+      id="formulario"
+      action=""
+      class="flex flex-col gap-4 bg-blue-950 text-white p-4 rounded-2xl"
+    >
+      <label for="">Nombre:</label>
+      <input type="text" placeholder="Juan Carlos" id="nombre" />
+      <label for="">Apellidos:</label>
+      <input type="text" placeholder="Perez Mamani" id="Apellidos" />
+      <button type="submit" class="bg-white text-black rounded-2xl">
+        enviar
+      </button>
+    </form>
   </body>
 </html>
