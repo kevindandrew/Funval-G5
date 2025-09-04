@@ -216,3 +216,18 @@ function MostrarNombre({ nombre, habilidadesLaborales }) {
 }
 
 MostrarNombre(superHeroe);
+
+/* 
+💡 EJERCICIO: "Liga de Superhéroes"
+1. Desestructura el array para obtener el primer héroe, el segundo héroe, y el resto en otro array.  
+2. Crea un nuevo array de héroes que incluya a los originales y agrega uno nuevo con el spread operator (...).  
+3. Desestructura un héroe en sus propiedades (nombre, poder, fuerza) y usa template literals para mostrar su descripción en consola.  
+4. Agrega un botón que, al hacer clic, muestre en el DOM una lista de héroes con sus niveles de fuerza.
+*/
+// Array de superhéroes
+const heroes = [
+  { nombre: "Iron Man", poder: "Armadura tecnológica", fuerza: 85 },
+  { nombre: "Thor", poder: "Martillo Mjolnir", fuerza: 95 },
+  { nombre: "Hulk", poder: "Fuerza sobrehumana", fuerza: 100 },
+  { nombre: "Black Widow", poder: "Espionaje y combate", fuerza: 75 },
+];
