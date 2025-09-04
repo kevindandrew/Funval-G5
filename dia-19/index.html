@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center p-10 bg-gray-500 h-full"
+  >
+    <!-- <ul id="lista"></ul> -->
+    <div class="flex w-[50%] justify-end">
+      <button
+        id="open-modal"
+        class="bg-blue-600 text-white size-16 text-3xl rounded-full flex items-center justify-center"
+      >
+        +
+      </button>
+    </div>
+    <div class="relative overflow-x-auto">
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3">Nombre</th>
+            <th scope="col" class="px-6 py-3">Edad</th>
+            <th scope="col" class="px-6 py-3">Pais</th>
+            <th scope="col" class="px-6 py-3">Promedio</th>
+            <th scope="col" class="px-6 py-3">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-tabla"></tbody>
+      </table>
+    </div>
+    <div
+      id="modalsito"
+      class="fixed w-full h-full bg-black/50 hidden items-center justify-center"
+    >
+      <div class="modal bg-white text-black">
+        <div class="w-full flex justify-end">
+          <button id="close-modal">x</button>
+        </div>
+
+        <form action="" class="flex flex-col gap-4 p-8">
+          <label for="">Nombre:</label>
+          <input type="text" placeholder="Juan Perez" />
+          <label for="">Edad:</label>
+          <input type="number" />
+          <label for="">Pais:</label>
+          <select name="" id="">
+            <option value="">Bolivia</option>
+            <option value="">México</option>
+            <option value="">Perú</option>
+            <option value="">Argentina</option>
+            <option value="">Chile</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
