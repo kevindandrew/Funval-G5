@@ -75,6 +75,7 @@ const estudiantes2 = [
     notas: [65, 60, 68],
   },
   { nombre: "Gabriela Soto", edad: 22, pais: "Paraguay", notas: [99, 97, 100] },
+  { nombre: "Geraldine", edad: 18, pais: "Peru" },
 ];
 
 let bodyTable = document.querySelector("#cuerpo-tabla");
@@ -88,6 +89,12 @@ function promedio(arrayNotas) {
 }
 
 for (let index = 0; index < estudiantes2.length; index++) {
+  let {
+    nombre,
+    edad = "No definido",
+    pais = "no definido",
+    notas = [0],
+  } = estudiantes2[index];
   bodyTable.innerHTML += `<tr
             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
           >
@@ -95,13 +102,11 @@ for (let index = 0; index < estudiantes2.length; index++) {
               scope="row"
               class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
             >
-              ${estudiantes2[index].nombre}
+              ${nombre}
             </th>
-            <td class="px-6 py-4">${estudiantes2[index].edad}</td>
-            <td class="px-6 py-4">${estudiantes2[index].pais}</td>
-            <td class="px-6 py-4">${promedio(estudiantes2[index].notas).toFixed(
-              2
-            )}</td>
+            <td class="px-6 py-4">${edad}</td>
+            <td class="px-6 py-4">${pais}</td>
+            <td class="px-6 py-4">${promedio(notas).toFixed(2)}</td>
             <td class="px-6 py-4 flex gap-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
@@ -127,3 +132,87 @@ abrir.addEventListener("click", function () {
 cerrar.addEventListener("click", function () {
   modal.classList.replace("flex", "hidden");
 });
+/* ---------------------DESESTRUCTURAION DE ARRAYS------------------------ */
+let frutas = ["papaya", "banana", "frutilla", "chirimoya"];
+
+let [var1, var2, var3, var4 = "fruta no encontrada"] = frutas;
+
+console.log(var4);
+/* --------------------DESESTRUCTURACION DE OBJETOS------------------- */
+let estudianteFunval = {
+  name: "Santiago",
+  pais: "Argentina",
+  age: 23,
+  identidadSecreta: "el santi",
+  celular: {
+    marca: "Samsung",
+  },
+  notas: [10, 20, 30],
+};
+
+let {
+  name: superNombre,
+  age,
+  pais,
+  identidadSecreta = "EL BARTO",
+  celular: { marca = "no tengo celu" },
+  notas: [, nota2],
+} = estudianteFunval;
+console.log(marca);
+console.log(nota2);
+/* ------------------------SPREAD OPERATOR------------------- */
+// DUPLICAR o copiar UN OBJETO O UN ARRAY
+// FUSIONAR 2 O MAS OBJETOS/ARRAY
+// AGREGAR VALORES AUN OBJETO/ARRAY YA EXISTENTE y crear uno nuevo
+/* ------------------ARRAYS--------------------------------------- */
+let mascotas = ["gato", "Perro", "Loro", "Monos", "Peces", "Renacuajos"];
+let mascotasMenosComunes = [
+  "lagartijas",
+  "Guacamayas",
+  "serpientes",
+  "Tarantulas",
+];
+
+let mascotas2 = [...mascotas];
+let totalMascotas = [...mascotas, ...mascotasMenosComunes];
+let mascotasDeRicos = [...mascotas, "Gorila", "Jirafas", "Leones", "Elefantes"];
+
+console.log(mascotas2);
+console.log(totalMascotas);
+console.log(mascotasDeRicos);
+/* -------------------------OBJETOS-------------------- */
+let superHeroe = {
+  nombre: "Peter Parker",
+  identidadSuperSecreta: "Spiderman",
+  superPoder: "Habilidades de araña",
+  habilidadesLaborales: "Resiliencia",
+};
+let agenteShield = {
+  nombre: "Colson",
+  arma: "Pistola Paralizadora",
+  superPoder: "Ninguno",
+  agenteDelGobierno: false,
+};
+
+let copiarObj = { ...superHeroe };
+
+let fusion = { ...superHeroe, ...agenteShield };
+
+let superHeroSimbionte = {
+  ...superHeroe,
+  traje: "Negro",
+  aumentoDeFuerza: 10,
+  ira: 100,
+};
+console.log(copiarObj);
+console.log(fusion);
+console.log(superHeroSimbionte);
+
+function MostrarNombre({ nombre, habilidadesLaborales }) {
+  console.log(
+    `el nombres es : ${nombre}`,
+    `las habilidades son :${habilidadesLaborales}`
+  );
+}
+
+MostrarNombre(superHeroe);
