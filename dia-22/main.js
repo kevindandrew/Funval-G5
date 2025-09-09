@@ -158,11 +158,12 @@ Pizza lista en 3 segundos
 Sirviendo Pizza al cliente...
 Cliente está comiendo...
 Cuenta pagada 
+manipulando el DOM 
 */
 
 /*
  ENTREGA FINAL DEL GRUPO:
-Un archivo .js con el código del simulador, organizado en funciones
+Un archivo o varios  .js con el código del simulador, organizado en funciones
 y con comentarios explicativos de dónde aplicaron:
    - Callback
    - Promesas
