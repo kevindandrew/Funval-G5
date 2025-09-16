@@ -11,7 +11,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
     return respuestaServidor.json();
   })
   .then(function (data) {
-    console.log(data);
     data.forEach((usuario) => {
       contenedor.innerHTML += `
 <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
@@ -30,12 +29,19 @@ fetch("https://jsonplaceholder.typicode.com/users")
 </div>
 `;
     });
+  })
+  .catch((error) => {
+    console.log(error);
   });
 
 /* async function darData() {
-  let respuesta = await fetch("https://jsonplaceholder.typicode.com/users");
-  let datito = await respuesta.json();
-  console.log(datito);
+  try {
+    let respuesta = await fetch("https://jsonplaceholder.typicode.com/users");
+    let datito = await respuesta.json();
+    console.log(datito);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 darData(); */
@@ -62,3 +68,65 @@ darData(); */
 //    - El nombre de la empresa (company.name)
 //    - El eslogan de la empresa (company.catchPhrase)
 // 3. Insertar todas las tarjetas dinámicamente en el DOM.
+
+/* -----------------------AXIOS----------------------------- */
+
+/* axios("https://jsonplaceholder.typicode.com/users")
+  .then(({ data }) => console.log(data))
+  .catch((error) => {
+    console.log(error);
+  });
+async function datosAxios() {
+  try {
+    let { data } = await axios("https://jsonplaceholder.typicode.com/users");
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+}
+datosAxios(); */
+/* ---------------fetch---------------------------- */
+fetch("./usuarios.json")
+  .then((respuesta) => {
+    return respuesta.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    error;
+  });
+async function datitosUsuarios() {
+  try {
+    let res = await fetch("./usuarios.json");
+    let data = await res.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+}
+datitosUsuarios();
+/* --------------------AXIOS------------------------------- */
+axios("./usuarios.json")
+  .then(({ data }) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+async function axiosJsn() {
+  let { data } = await axios("./usuarios.json");
+  console.log(data);
+}
+axiosJsn();
+
+/* 
+  solo quiero q rendericen a los usuarios q tengan mas de 25 años y ademas 
+  quiero q puedan mostrar los hobbies pero con colores diferentes 
+  ejemplo
+  videjuegos red svg mando
+  caminar  verde  una persona corriendo
+  ver peliculas azul cinta
+  quiero q muestren informacion del usuario en una card 
+*/
