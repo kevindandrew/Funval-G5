@@ -1,8 +1,11 @@
-@import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 /* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
-@import url("https://fonts.cdnfonts.com/s/92625/simpsonfont.woff");
-
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "tailwindcss";
 @theme {
   --font-simpson: "Simpsonfont", sans-serif;
+  --font-kevin: "Chewy", system-ui;
+  --font-bitcount: "Bitcount Grid Double", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 }
